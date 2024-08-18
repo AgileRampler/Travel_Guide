@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Wbsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg   " >
+ <div class="container-fluid " >
+          <a class="navbar-brand text-light " href="#">Travel Guide</a>
+          <button class="navbar-toggler  bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center text-light" id="navbarNav">
+            <ul class="navbar-nav  justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link text-light " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-light" href="#">Package</a>
+              </li>
+              <div>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Packages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Full Package</a></li>
+                      <li><a class="dropdown-item" href="#">Budget Freindly</a></li>
+                      <li><a class="dropdown-item" href="#">Expensive</a></li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Hotel's</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Blogs</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+   <div class="home-content">
+          <div class="container-fluid">
+            <div class="h1 text-light position-absolute start-50 bottom-50 z-1 fw-bold  lh-base text-danger" ><a  class="text-danger nav-link " style="font-size: 3.2rem;" >Travel <br><span>Far Enough</span><br>You meet <span style="font-size: 5.2rem;"><br>yourself</span></a></div>
+          </div>
+         
+   </div>
+     <!--button -elemnt-->
+ <div class="button-element">
+      <div class="container-fluid " >
+           <button class="enqButton text-light bg-success border border-0 p-2"
+           data-bs-toggle="modal"
+           data-bs-target="#enquiryModal" >
+           ENQUIRY
+           </button>
+           <div class="modal fade" id="enquiryModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Submit Your Details</h4>
+                      </div>
+                      
+                      <!-- Modal Body -->
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                          </div>
+                
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                          </div>
+                
+                          <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                          </div>
+                
+                          <div class="form-group">
+                            <label for="preference">Preferences:</label>
+                            <select class="form-control" id="preference" required>
+                              <option value="" disabled selected>Select your preference</option>
+                              <option value="option1">Option 1</option>
+                              <option value="option2">Option 2</option>
+                              <option value="option3">Option 3</option>
+                            </select>
+                          </div>
+                
+                          <div class="form-group">
+                            <label for="members">Number of Members:</label>
+                            <input type="number" class="form-control" id="members" placeholder="Enter number of members" required>
+                          </div>
+                
+                          <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                          </div>
+                
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+       <!--Honey Moon Packages--> 
+ 
+  <section class="packages">
+      
+              <div >
+                <div class="container-fluid">
+                    <h2 class="text-center  mt-5 mb-5">HONEYMOON PACKAGES</h2>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-3">
+                            <div class="package">
+                                <img class="packImg img-fluid" src="./images/Honeymood/vegetation-waterways-state-Kerala-India.webp"  alt="Kerala">
+                                <h2>Kerala Honeymoon Packages</h2>
+                                <p class="time">(03 Nights/04 Days)</p>
+                                <p></p>
+                                <a href="#" class="bookNow">BOOK NOW</a>
+                            </div>  
+                        </div>
+                        <div class="col-md-3">
+                            <div class="package">
+                                <img class="packImg img-fluid" src="./images/Honeymood/image-1.jpeg" alt="">
+                                <h2>Maldive Honeymoon Packages</h2>
+                                <p class="time">07 Nights/06 Days</p>
+                                <p></p>
+                                <a href="#" class="bookNow">BOOK NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="package">
+                                <img class="packImg img-fluid" src="./images/Honeymood/images.jpeg" alt="">
+                                <h2>Manali Honeymoon Packages</h2>
+                                <p class="time">05 Nights/4Days</p>
+                                <p></p>
+                                <a href="#" class="bookNow">BOOK NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="package">
+                                <img class="packImg" src="./images/Honeymood/honeymoon-in-goa.webp" alt="">
+                                <h2>Goa Honeymoon Packages</h2>
+                                <p class="time">04 Nights/05 Days</p>
+                                <p></p>
+                                <a href="#" class="bookNow">BOOK NOW</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <a href="" class="morePackages">More Packages</a>
+                        </div>
+  </section>
+        
+
+                    <!--Festive     offer tour-->
+<section class="festive-offer">
+    <div >
+        <div class="container">
+         <div>   
+         <div class="h2  text-center mt-5 mb-5">SPECIAL KERALA FESTIVAL TOURS
+         </div>
+          <!-- Carousel -->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="carouselImg" src="https://www.tripsavvy.com/thmb/_IW5qmzxk99F2FLSfu1uu4tIm58=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/houseboats_in_kottayam_2_438-56a3be175f9b58b7d0d39246.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Backwaters</h5>
+                  <p>The scenic backwaters of Kerala comprise serene stretches of lakes, canals and lagoons located parallel to the coast of the Arabian Sea</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carouselImg" src="https://keralatravels.com/userfiles/1475745865_munnar.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mountains</h5>
+                  <p>Munnar is a town in the Western Ghats mountain range in India’s Kerala state</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carouselImg" src="./images/beach.cms" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>The beach skirts the Arabian Sea, part of the Indian Ocean.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+         </div>
+
+           
+    </div>
+</section> 
+ <!-- Gallery -->
+
+        <section class="gallary">
+        <div class="container">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zD43hknPtLc?si=MXZiG1e7mGvoqSwP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+          </div>
+          <div>
+            <img height="250px" width="400px" src="./images/7a9ccf59d377d8fab924f46cbed6e5a0.jpg" alt="" class="image-group">
+          </div>
+        </div>
+          </section>
+         
+   
+<!-- North Tours -->
+<section class="north-india">
+    <div id="northTours">
+        <h2 class="text-center mt-5 mb-5">NORTH INDIAN TOURS</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <img class="tourImage" src="https://www.holidify.com/images/cmsuploads/compressed/h4_20170822181427.PNG" alt="hawamahal">
+          </div>
+          <div class="col-md-3">
+            <img class="tourImage" src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-north-india3.png" alt="">
+          </div>
+          <div class="col-md-3">
+            <img class="tourImage" src="https://skift.com/wp-content/uploads/2022/06/GettyImages-1208049833-scaled-e1654782364566-1024x682.jpg" alt="">
+          </div>
+          <div class="col-md-3">
+            <img class="tourImage" src="https://img.veenaworld.com/wp-content/uploads/2023/01/shutterstock_2044050407.jpg" alt="">
+          </div>
+    </div>
+  </section>
+   <!-- Premium Features  offers-->
+   <section class="features">
+  <div id="features">
+        <h2 class="text-center mt-5">OUR PREMIUM FEATURES</h2>
+        <p class="text-center">we will make your dreams come true</p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-card p-3">
+              <img style="border: 1px solid black";
+                class="img-fluid"
+                src="https://img.freepik.com/premium-photo/girl-is-sitting-by-fire-background-tent-spruce-forest-starry-sky-which-milky-way-is-visible_10069-8442.jpg"
+                alt=""
+              />
+              <h3 class="service-title">FREE BIKE RIDES</h3>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card p-3">
+              <img style="border: 1px solid black"
+                class="img-fluid"
+                src="https://media.istockphoto.com/id/1024667216/photo/the-five-people-rest-near-the-bonfire-evening-night-time.jpg?s=612x612&w=0&k=20&c=nVX3Rg5DbemJDfQMTVSnlb9Rm7p9irytM1fNU64d1R0="
+                alt="customer support girl"
+              />
+              <h3 class="service-title">CAMPFIRE</h3>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card p-3">
+              <img style="border: 1px solid black"
+                class="img-fluid"
+                src="https://www.shutterstock.com/image-photo/happy-young-woman-working-on-600nw-1868918953.jpg"
+                alt=""
+                />
+                <h3 class="service-title">24/7 SUPPORT</h3>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card p-3">
+              <img style="border: 1px solid black"
+                class="img-fluid"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFBxo2sP8R-4JEH-fAP0KnremhnZjY-B-AQ&s" 
+                alt=""
+              />
+              <h3 class="service-title">TOUR GUIDE</h3>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+  </div id="features">
+  </section>
+  <!-- Customer Testimonials -->
+  <section id="testimonials " class="py-5">
+    <div class="container-fluid">
+      <h2 class="text-center mb-5">Customer Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 text-center">
+            <img width="250px" height="200px" class="round-cricle mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0Dndkb8GSQGgN6vBvJWd7x4PKuUuR-897A&s" id="sarah" alt="" />
+            <h5 class="customer-name">Sarah Thompson</h5>
+            <p class="testimonial-text">
+              "Kerala's backwaters, lush hills, and warm hospitality made our trip unforgettable. We felt truly immersed in nature and culture, and the local cuisine was a delight. We'll cherish these memories forever!"
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 text-center">
+            <img width="250px" height="200px" class="round-cricle mb-3" src="https://i.pinimg.com/originals/11/43/f2/1143f2854584a18596f96f6f84caf2dc.jpg" alt="" />
+            <h5 class="customer-name">Emily Rivera</h5>
+            <p class="testimonial-text">
+              "Our Kerala vacation was a dream come true—peaceful houseboat rides, rejuvenating Ayurvedic treatments, and breathtaking landscapes. The people were incredibly welcoming, making our experience even more special."
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 text-center">
+            <img width="250px" height="200px" class="round-cricle mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Z-Ye34OErNf_INLvdNndnajF2b2S1Q_LAA&s" alt="" />
+            <h5 class="customer-name">Liana Anderson</h5>
+            <p class="testimonial-text">""Kerala exceeded all our expectations with its stunning scenery and rich culture. From the tea gardens to the beaches, every moment was perfect. We can't wait to return!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+    <div class="col">
+ 
+        <div class="row-md-3">
+          <h3>ABOUT US</h3>
+          <ul class="footLinks ">
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Our Management</a></li>
+            <li><a href="">Connections</a></li>
+            <li><a href="">Annual Reports</a></li>
+            <li><a href="">Our Network</a></li>
+          </ul>
+        </div>
+        <div class="media">
+          <h3>SOCIAL MEDIA</h3>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+        <img src="./images/adwadaw.png" width="10%" alt="" class="sticker-img">
+      </div>
+     </div>
+  </footer>
+</div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
